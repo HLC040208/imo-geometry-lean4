@@ -22,3 +22,19 @@
 ├── lakefile.lean        # 项目配置（引入 LeanGeo 与 Mathlib 依赖）
 ├── lean-toolchain       # Lean 4 工具链版本定义
 └── README.md            # 项目说明文档
+
+## 🚀 环境配置与运行
+
+本项目环境配置要求与 [LeanGeo](https://github.com/project-numina/LeanGeo) 保持一致：
+
+### 1. 初始化项目
+在 Linux 终端执行以下指令：
+
+```bash
+# 克隆本项目
+git clone [https://github.com/HLC040208/imo-geometry-lean4.git](https://github.com/HLC040208/imo-geometry-lean4.git)
+cd imo-geometry-lean4
+
+# 获取 Lean 4 依赖包与 Mathlib 预编译缓存（推荐）
+lake exe cache get
+lake build
