@@ -44,10 +44,11 @@ lake build
 ```
 
 ### 2. 验证证明成果
-你可以对 `IMO_00+` 目录下的任意题目进行内核验证。例如验证 2003 年第 4 题：
+随后，用本项目中的 `IMO_00+` 目录替换LeanGeo/LeanGeo_Bench中的 `IMO_00+` 目录。
+你可以对 `IMO_00+` 目录下的任意题目进行内核验证。例如验证 2000 年第 1 题：
 
 ```bash
-lake env lean IMO_00+/imo_2003_p4.lean
+lake env lean IMO_00+/imo_2000_p1.lean
 ```
 *注：若输出显示 `Goals accomplished 🎉` 且无红字报错，则表示证明通过。*
 
@@ -67,8 +68,8 @@ python LeanScope/leanscope.py ./IMO_00+
 
 | 题目编号 | 逻辑心跳 (Heartbeats) | 状态 | 耗时 (s) |
 | :--- | :--- | :--- | :--- |
-| IMO_2003_P4 | 45,210 | Success | 1.15 |
-| IMO_2024_P3 | 132,400 | Success | 3.42 |
+| IMO_2023_P2 | 38,044,309 | Success | 973.448 |
+| Numina/1. | 113,300,750 | Success | 852.011 |
 
 ---
 
